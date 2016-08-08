@@ -14,10 +14,6 @@ const connection = mysql.createConnection({
 });
 
 connection.connect();
- connection.query(`select * from  pets`, (err,rows,fields) => {
-    console.log('rows',rows);
-    console.log('err',err)
- 
-  })
+
 
 module.exports = connection;
